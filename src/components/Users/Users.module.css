@@ -1,0 +1,86 @@
+.userPhoto {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+.users_item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.user_info {
+    font-weight: bolder;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 70px;
+    grid-row-gap: 20px;
+}
+
+.users_container p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.users_container {
+    padding: 40px 30px 30px 30px;
+}
+
+
+
+.avatar_button {
+    margin-right: 10px;
+    text-align: center;
+}
+
+.avatar_button button {
+    /* background-color: rgb(116, 30, 116); */
+    border: 2px solid black;
+    font-weight: bolder;
+    color: black;
+}
+
+.users_info__item {
+    justify-self: left;
+}
+
+.users_info__item2 {
+    justify-self: right;
+}
+
+
+#pageNum {
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 15px;
+    position: relative;
+}
+
+.PrevNextButtons button{
+    margin: 5px 5px 5px 0px;
+}
+
+.resullts {
+    margin-top: -40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+
+}
+.resullts input {
+    padding: 5px;
+    border-radius:20px;
+    background-color: rgba(0, 0, 0, 0.163);
+}
+
+.resullts input:hover {
+box-shadow: 2px 2px 20px 2px black;
+}
+.searchBlock__input::before{
+    content: "🔍";
+}

@@ -1,0 +1,25 @@
+.follorwersLikes {
+    width: 200px;
+    height: 55px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    border-radius:10px;
+    color:red;
+    padding: 0px;
+
+}
+
+.followers__item {
+    border-right: 1px solid #000;
+}
+.follorwersLikes p{
+margin: 0;
+}
+.likes__item {
+    
+
+}

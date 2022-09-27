@@ -1,0 +1,30 @@
+.ProfileInfo_container {    
+    border-bottom: 2px dotted rgb(73, 71, 71);
+}
+.ProfileInfo_TopContainer {
+    display: grid;
+    grid-template-columns: 144px 200px 1fr 200px; 
+    grid-column-gap: 30px;
+    margin-top: 10px;
+    padding:5px;
+}
+
+.settingsButton {
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-self: right;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/17/17146.png);
+    background-color: inherit;
+    background-position: center;
+    background-size: cover;
+    transition: all 0.3s;
+}
+
+.settingsButton:active{
+    background-color:rgba(0, 0, 0, 0.218);
+    border-radius: 100%;
+    cursor: pointer;
+    transform:rotate(100deg) ;
+}

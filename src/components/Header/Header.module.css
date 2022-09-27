@@ -1,0 +1,68 @@
+
+.header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding-top: 10px;
+  grid-area: h;
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyk4WNsT-h5vXlay4iSgtFDTE_pXkz9mvFbQ&usqp=CAU);
+  background-position: center;
+  background-size: cover;
+}
+
+.favicon {
+  background-color:rgb(255, 132, 0) !important;
+  width: 65px;
+  height: 65px;
+  margin-left:  20px;
+  box-shadow: 5px 5px 10px 5px rgba(255, 0, 0, 0.475);
+  padding: 3px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.loginBlock {
+  float: right;
+  color: white !important;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.loginBlock a {
+  color: white !important;
+  text-decoration: none;
+}
+
+.loginBlock img {
+  width: 50px;
+  height: 50px;
+  box-shadow: none;
+  border-radius:0px;
+  margin: 0 auto;
+}
+.ProfileInfo {
+  margin-top: -5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.ProfileInfo img {
+  border-radius: 50%;
+  
+}
+.ProfileInfo button {
+  background:rgba(255, 255, 255, 0);
+  color:white;
+  border:1px solid white;
+  width: 80px;
+  font-weight: bolder;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.ProjectName h1 {
+  font-family: 'Bungee Spice', cursive;
+  font-size: 68px;
+  text-shadow: 5px 5px 22px black;
+
+}

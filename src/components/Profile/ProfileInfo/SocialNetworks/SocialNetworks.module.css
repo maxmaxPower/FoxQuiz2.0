@@ -1,0 +1,42 @@
+.SocialNetworksContainer {
+    border-left: 1px solid #000;
+    padding-left: 10px;
+}
+.SocialNetworksContainer a{
+    text-decoration: none;
+    color:black;
+}
+.SocialNetworksContainer_Changed {
+    border-left: 1px solid #000;
+    background-color: rgba(211, 211, 211, 0.43);
+    border-left: none;
+}
+
+.ContactsContainer p {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.error {
+    width: 200px;
+    height: 200px;
+    border:2px solid red
+}
+.ChangeContactsContainer p::first-letter {
+    text-transform: capitalize;
+}
+
+.ChangeContactsContainer {
+    height: 20px;
+    padding: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ChangeContactsContainer input {
+    display: flex;
+    height: 10px;
+    min-width: 160px;
+}

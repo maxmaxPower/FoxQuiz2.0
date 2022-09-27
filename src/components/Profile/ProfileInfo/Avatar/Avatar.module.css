@@ -1,0 +1,27 @@
+.avatar img {
+    width: 100%;
+    height: 100%;
+}
+
+.avatar {
+    height: 150px;
+    border: 3px solid black;
+    margin-bottom: 10px;
+
+}
+.avatar input {
+    max-width: 40px;
+}
+.avatarBlock {
+    max-width: 150px;
+    margin-bottom: 30px;
+}
+.photoInput {
+    display: flex;
+    justify-content: center;
+    border-radius:4px;
+
+}
+.photoInput input{
+    width: 115px;
+}

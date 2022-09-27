@@ -1,0 +1,26 @@
+.f_friends img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: 3px solid goldenrod;
+}
+
+.f_friends {
+    display: inline-flex;
+    margin-top: 15px;
+}
+
+.profile__inner {
+    padding: 10px;
+    font-weight: bolder;
+    text-align: center;
+
+}
+
+.f_friends .profile__inner a {
+    text-decoration: none;
+    color: white;
+}
+.avatar {
+    margin-bottom: 5px;
+}

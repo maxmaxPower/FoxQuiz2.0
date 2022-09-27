@@ -1,0 +1,48 @@
+.header__img img {
+    width: 100%;
+    height: 200px;
+}
+.header__img :hover{
+    opacity: 0.9;
+}
+
+.header_redactMode__img  {
+    margin-bottom: 4px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.choosePhoto {
+    position:absolute;
+}
+.choosePhoto button {
+    background:inherit;
+    border:none;
+}
+.choosePhoto img{
+    height: 120px;
+    opacity: 0.5;
+}
+.profile {
+    background-color: rgb(255, 255, 255);
+}
+.OnlineStatus {
+    display: flex;
+    justify-content: right;
+}
+.statusOnline {
+    text-align: center;
+    width: 70px;
+    height: 30px;
+    background: green;
+}
+
+.statusOffline {
+    text-align: center;
+    position: relative;
+    left: 90%;
+    width: 70px;
+    height: 30px;
+    background: red;
+}

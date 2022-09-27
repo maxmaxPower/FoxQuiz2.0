@@ -1,0 +1,25 @@
+.posts {
+    margin-top: 20px;
+}
+
+.newpost {
+    margin-bottom: 10px;
+}
+
+.MyPosts {
+    padding: 20px;
+}
+
+.TextArea_ButtonSay_PostAdded {
+    display: flex;
+    padding-right: 20px;
+}
+.sayPostAdded {
+    padding-left: 20px;
+    height: 36px;
+
+}
+textarea {
+    width: 300px;
+    height: 50px;
+}

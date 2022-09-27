@@ -1,0 +1,66 @@
+.fullScreenContainer {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(86, 86, 86, 0.449);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactUs {
+    width: 500px;
+    height: 400px;
+    background: white;
+    border: 4px solid rgb(0, 0, 0);
+    box-shadow: 8px 8px 15px rgb(0, 0, 0);
+}
+
+.contactUs h1 {
+    font-size: 38px;
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.478);
+}
+
+.right {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 94.3%;
+    top: -4px;
+    background-position: 2px;
+    background-size: cover;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd3-D3jikECQcG_xPmtAhh_uXc_eeR0jSd6Dp676KRdFCAYmIfeM2lAr2Mfi9zF0G4iWA&usqp=CAU);
+}
+
+.inputsFormsContainer {
+    margin-top: 30px !important;
+    position: relative;
+    margin: 0 auto;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inputsFormsContainer button {
+    background: white;
+    font-weight: bolder;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.inputsFormsContainer input {
+    font-size: 15px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid rgba(96, 96, 96, 0.747);
+}
+
+.inputsFormsContainer input:last-child {
+    padding-bottom: 20px;
+}

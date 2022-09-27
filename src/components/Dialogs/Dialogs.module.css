@@ -1,0 +1,90 @@
+.profileAvatar img{
+    width: 30px;
+    height: 30px;
+    border-radius:100%;
+}
+.messegesInner {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+
+.dialogsPage {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 800px;
+}
+
+.dialogsItems {
+    background-color: rgb(224, 200, 200);
+    border-right: 5px solid black;
+}
+
+.dialog {
+    text-align: center;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.dialogsItems a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.DialogItem {
+    width: 30px;
+    height: 10px;
+    background-color: blueviolet;
+}
+
+.avatar img {
+    width: 50px;
+    height: 50px;
+    /* border-radius: 10%;
+    border:2px solid rgb(73, 230, 238); */
+}
+
+.textArea {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.messegeText textarea {
+    width: 500px;
+    height: 50px;
+    border: 1px solid black; 
+
+}
+.messegeText {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.messegebutton {
+    margin: 0 auto;
+    width: 500px;
+    display: flex;
+    justify-content: right;  
+}
+button {
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+}
+
+
+
+.messegeItem {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    grid-column-gap: 10px;
+}
+.messegesWraper {
+    border: 2px solid black
+}
