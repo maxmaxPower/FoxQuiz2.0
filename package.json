@@ -2,7 +2,7 @@
   "name": "react-kabzda-1",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://orekhovskyimaksym.github.io/FoxQuizi/",
+  "homepage": "https://orekhovskyimaksym.github.io/FoxQuiz/",
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",

@@ -12,7 +12,7 @@ const authFalse = <NavLink to={'/login'}>Login</NavLink>;
   return (
     <header className={s.header}>
     <NavLink to="profile">
-    <img alt="1" className={s.favicon} src={projectIcon}></img>
+    <img alt="" className={s.favicon} src={projectIcon}></img>
     </NavLink>
     <div className={s.ProjectName}>
      <h1>FoxQuiz</h1>
