@@ -3,14 +3,19 @@
     height: 55px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0px;
     border: 1px solid black;
     text-align: center;
     font-weight: bold;
     border-radius:10px;
     color:red;
-    padding: 0px;
+    padding: 10px;
 
+}
+@media (max-width: 3750px) {
+    .follorwersLikes {
+        width: 150px;
+        font-size: 10px;
+    }
 }
 
 .followers__item {

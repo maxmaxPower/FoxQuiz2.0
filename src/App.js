@@ -14,9 +14,7 @@ import Preloader from "./components/common/preloader/preloader";
 import store from "./redux/redux-store";
 import { useEffect } from "react";
 import ContactUs from "./components/ContactUs/ContactUs";
-import PremiumStatus from "./components/PremiumStatus/PremiumStatusPage";
 import Recall from "./components/Recall/Recall";
-import PremiumStatusContainer from "./components/PremiumStatus/PremiumStatusPageContainer";
 import PremiumStatusPageContainer from "./components/PremiumStatus/PremiumStatusPageContainer";
 const DialogsContainerLazy = React.lazy(() =>
   import("./components/Dialogs/DialogsContainer")
@@ -33,6 +31,7 @@ const UsersContainerLazy = React.lazy(() =>
 
 const App = (props) => {
   let [call, setCall] = useState(false);
+
   let [themeColor,setThemeColor] = useState(false);
 
   useEffect(() => {
@@ -40,9 +39,7 @@ const App = (props) => {
   });
 
   return (
-    <Suspense
-    
-      fallback={
+    <Suspense fallback={
         <div>
           <Preloader />
         </div>
@@ -52,7 +49,7 @@ const App = (props) => {
 
       {call && <ContactUs call = {call} setCall = {setCall}/>}
       <div className="app-wrapper">
-        <HeaderContainer />
+        <HeaderContainer TopIconColor={themeColor} />
         <NavbarContainer themeColor = {themeColor} setThemeColor = {setThemeColor}/>
         <div className="app-wrapper-content">
           <Routes>
@@ -71,8 +68,8 @@ const App = (props) => {
             <Route path="/premiumStatus" element={<PremiumStatusPageContainer />} />
           </Routes>
         </div>
-        <Recall setCall={setCall} call={call}/>
       </div>
+      <Recall setCall={setCall} call={call}/>
       </div>
     </Suspense>
   );

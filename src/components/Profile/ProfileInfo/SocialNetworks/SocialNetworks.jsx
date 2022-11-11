@@ -16,7 +16,7 @@ const SocialNetworks = ({onSubmit,profile,editMode}) => {
   const Contact = ({ contactKey, contactValue }) => {
     return (
       <div className={styles.ContactsContainer}>
-        <b>{contactKey}:</b> [ <a href={contactValue} target={"to _blank"}>{contactValue}</a>   ]
+        <b>{contactKey}:</b> <a href={contactValue} target={"to _blank"}>{contactValue}</a>   
       </div>
     );
   };

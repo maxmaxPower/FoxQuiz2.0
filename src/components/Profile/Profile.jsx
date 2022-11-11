@@ -4,33 +4,28 @@ import ProfileInfo from "./ProfileInfo/ProfileInfo";
 import React, { useState } from "react";
 
 const Profile = ({saveProfile,...props}) => {
-  return (
-    <div className={styles.profile}>
-      <TopBackgroundImage backgroundimage = {"https://images.ctfassets.net/hrltx12pl8hq/7yQR5uJhwEkRfjwMFJ7bUK/dc52a0913e8ff8b5c276177890eb0129/offset_comp_772626-opt.jpg?fit=fill&w=800&h=300"}/>
-      <OnlineStatus isOwner = {props.isOwner}/>
+  return <div className={styles.profile}>
+      <TopBackgroundImage isOwner = {props.isOwner}/>
       <ProfileInfo saveProfile = {saveProfile} savePhoto = {props.savePhoto} isOwner={props.isOwner} profile = {props.profile}  status = {props.status} updateStatus = {props.updateStatus}/>
       <MyPostsContainer />
-    </div>
-  );
+        </div>
 };
 
-const TopBackgroundImage = ({backgroundimage}) => {
-  let [redactMode,setRedactMode] = useState(false);
-return <div className={styles.header__img }>
-{!redactMode ? <img onMouseEnter={()=>{setRedactMode(true)}} alt = "" src={backgroundimage} ></img> 
-: <div className={styles.header_redactMode__img}>
-<img onMouseLeave={()=>{setRedactMode(false)}} alt = "" src={backgroundimage} ></img>
-<div className={styles.choosePhoto}>
-<button onClick={()=>{alert("IN PROGRESS")}}>
-<img src="http://cdn.onlinewebfonts.com/svg/img_391162.png" alt="" />
-</button>
-</div>
-</div>} 
-</div>
-}
+const TopBackgroundImage = ({isOwner}) => {
 
-const OnlineStatus = ({isOwner}) => {
-return <div className={styles.OnlineStatus}>{isOwner ? <div className={styles.statusOnline}>Online</div> : <div className={styles.statusOffline}>Offline</div>  }</div>
-}
+  const defaultFonts = 'https://www.androidauthority.com/wp-content/uploads/2015/11/00-best-backgrounds-and-wallpaper-apps-for-android.jpg';
+  let [redactMode,setRedactMode] = useState(false);
+
+  return <div onClick={()=>{alert('IN PROGRESS')}} className={styles.profile_header}>
+    
+    <div className={isOwner ? styles.OnlineStatus : styles.OfflineStatus}>{isOwner ? "Online" : "Offline"}</div>  
+    {redactMode ? 
+    <div className="absolute w-44">
+      <button onClick={()=>{alert("IN PROGRESS")}}>
+ <img src="http://cdn.onlinewebfonts.com/svg/img_391162.png" alt="" />
+ </button></div> : "" }
+    <img src={defaultFonts} alt="" onMouseEnter={() => {setRedactMode(true)}} onMouseLeave={() => {setRedactMode(false)}} /> 
+  </div>
+    }
 
 export default Profile;

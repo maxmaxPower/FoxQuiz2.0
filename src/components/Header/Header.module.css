@@ -1,34 +1,40 @@
-
 .header {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
-  padding-top: 10px;
+  padding:10px;
   grid-area: h;
   background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyk4WNsT-h5vXlay4iSgtFDTE_pXkz9mvFbQ&usqp=CAU);
   background-position: center;
   background-size: cover;
 }
-
-.favicon {
-  background-color:rgb(255, 132, 0) !important;
-  width: 65px;
-  height: 65px;
-  margin-left:  20px;
-  box-shadow: 5px 5px 10px 5px rgba(255, 0, 0, 0.475);
-  padding: 3px;
-  border-radius: 15px;
-  cursor: pointer;
+.header_container {
+  padding: 4px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  height: 100%;
 }
 
+.favicon {
+  max-height: 65px;
+  max-width: 65px;
+  cursor: pointer;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px 5px rgba(255, 0, 0, 0.475);
+}
+.favicon img{
+  height: 100%;
+}
+
+
 .loginBlock {
+  max-height: 100%;
   float: right;
   color: white !important;
   display: flex;
   text-align: center;
   flex-direction: column;
-  margin-right: 20px;
 }
+
 
 .loginBlock a {
   color: white !important;
@@ -36,14 +42,12 @@
 }
 
 .loginBlock img {
-  width: 50px;
-  height: 50px;
+  height: 30px;
   box-shadow: none;
   border-radius:0px;
   margin: 0 auto;
 }
 .ProfileInfo {
-  margin-top: -5px;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -53,16 +57,53 @@
   
 }
 .ProfileInfo button {
+  padding: 0px 3px 0px 3px;
+  margin: 0;
   background:rgba(255, 255, 255, 0);
   color:white;
   border:1px solid white;
-  width: 80px;
   font-weight: bolder;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.ProjectName h1 {
-  font-family: 'Bungee Spice', cursive;
-  font-size: 68px;
-  text-shadow: 5px 5px 22px black;
-
+.ProfileInfo button {
+ font-size: 12px;
 }
+.ProjectName {
+  max-height: 100% ;
+}
+.ProjectName h1 {
+
+  font-size: 4vw;
+  font-family: 'Bungee Spice', cursive;
+  text-shadow: 5px 5px 22px black;
+  animation: top_down 10s infinite ;
+}
+
+@media (max-width: 740px) {
+  
+  .favicon {
+    height: 55px;
+  }
+}
+@media (max-width: 570px) {
+  .loginBlock img {
+    height: 20px;
+  }
+  .loginBlock {
+    font-size: 10px;
+  }
+  .favicon {
+    height: 40px;
+  }
+
+} 
+
+
+
+
+/* @keyframes top_down {
+ 50% {
+    font-size: 80px;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0); }
+} */
+

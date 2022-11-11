@@ -1,47 +1,50 @@
-.header__img img {
-    width: 100%;
+
+.profile_header {
     height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.header__img :hover{
+
+.profile_header img {
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 740px) {
+  .profile_header  {
+   height: 150px;
+  }
+}
+
+
+.profile_header img:hover{
     opacity: 0.9;
 }
 
-.header_redactMode__img  {
-    margin-bottom: 4px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-}
-.choosePhoto {
-    position:absolute;
-}
-.choosePhoto button {
-    background:inherit;
-    border:none;
-}
-.choosePhoto img{
-    height: 120px;
-    opacity: 0.5;
-}
+
 .profile {
     background-color: rgb(255, 255, 255);
 }
 .OnlineStatus {
-    display: flex;
+    opacity: 1;
+    z-index: 10000;
     justify-content: right;
-}
-.statusOnline {
-    text-align: center;
+    position: absolute;
+    right:0;
+    top: 0;
+    text-align: center ;
     width: 70px;
     height: 30px;
-    background: green;
+    background: rgb(8, 171, 8);
+    font-weight: bold;
 }
 
-.statusOffline {
+.OfflineStatus {
+    font-weight: bold;
     text-align: center;
-    position: relative;
-    left: 90%;
+    position: absolute;
+    right:0;
+    top: 0;
     width: 70px;
     height: 30px;
     background: red;

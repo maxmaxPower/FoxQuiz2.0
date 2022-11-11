@@ -1,11 +1,13 @@
 import React from 'react'
-import styles from './Recall.module.css'
-
+import styles from './Recall.module.css';
+import {AiOutlineMessage} from 'react-icons/ai'
 const Recall = ({setCall,call}) => {
   return (
-    <div className={styles.recall}>
-              <button onClick={() => { setCall(!call)}}>Contact us </button>
-    </div>
+  
+              <AiOutlineMessage style={{width:'70px',height:'70px'}} className={styles.fillMessage}
+                 onClick={() => { setCall(!call)}}
+              />
+  
   )
 }
 

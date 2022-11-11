@@ -12,23 +12,23 @@ const Description = ({onSubmit,saveProfile, ...props }) => {
 
 const DescriptionInfo = ({profile}) => {
   return (
-    <div className={styles.leftCont}>
+    <div className={styles.DescriptionInfo}>
       <b>Full Name : </b>
-      <div>{profile.fullName}</div>
+      <div><p>{profile.fullName}</p></div>
       <div>
         <b>About me :</b>
-        <div>{profile.aboutMe}</div>
+        <div><p>{profile.aboutMe}</p></div>
       </div>
       <div>
         <b>Looking for a job :</b>{" "}
         {profile.lookingForAJob ? (
-          <span style={{ color: "green" }}>yes</span>
+          <p style={{ color: "green" }}>yes</p>
         ) : (
-          <span style={{ color: "red" }}>no</span>
+          <p style={{ color: "red" }}>no</p>
         )}
       </div>
       <b>My professional skills :</b>
-      <div>{profile.lookingForAJobDescription}</div>
+      <p>{profile.lookingForAJobDescription}</p>
     </div>
   );
 };

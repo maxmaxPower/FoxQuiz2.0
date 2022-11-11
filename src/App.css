@@ -1,5 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .app-wrapper {
-  padding-top: 10px;
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -11,6 +14,13 @@
   grid-template-columns: 3fr 10fr;
 }
 
+@media (max-width: 800px) {
+  .app-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .theme-color {
   position: absolute;
   margin-left: -120px;
@@ -20,7 +30,6 @@
   grid-area: c;
   background-color: white;
   position: relative;
-  max-width: 920px;
 
 }
 

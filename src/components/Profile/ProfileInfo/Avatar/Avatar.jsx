@@ -7,7 +7,7 @@ const Avatar = ({savePhoto,profile,isOwner}) => {
       <div className={a.avatar}>
           <img src={profile.photos.large != null ? profile.photos.large : defPhoto} alt=""/>
       </div>
-          <div className={a.photoInput}>{isOwner && <input type={"file"}  style={{color: "transparent"}} onChange={(e)=>{savePhoto(e.target.files[0])}}></input>} </div>
+          {isOwner && <input type={"file"} onChange={(e)=>{savePhoto(e.target.files[0])}}></input>} 
       </div>  
      
     );

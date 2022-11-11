@@ -36,14 +36,18 @@
 }
 
 .blackBtnColor {
+  padding: 4px;
   background:rgba(66, 63, 63, 0.93);
   color:white;
-  border:3px solid white;
+  border:5px solid white;
 
 }
 .whiteBtnColor {
+  padding: 4px;
+  background:white;
   color:rgba(0, 0, 0, 0.833);
-  border:3px solid black;
+  border: 6px solid black;
+  
 }
 nav button {
   margin-top: 20px;
@@ -53,4 +57,9 @@ nav button {
   font-weight: bold;
   border-radius: 4px;
   box-shadow: 1px 1px 5px ;
+}
+@media (max-width: 800px) {
+  .nav {
+    display: none;
+  }
 }

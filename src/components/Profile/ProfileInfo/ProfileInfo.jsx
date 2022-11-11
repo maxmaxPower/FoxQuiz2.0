@@ -35,26 +35,10 @@ let ProfileInfo = ({ saveProfile, ...props }) => {
   return (
     <div className={styles.ProfileInfo_container}>
       <div className={styles.ProfileInfo_TopContainer}>
-        <Avatar
-          isOwner={props.isOwner}
-          savePhoto={props.savePhoto}
-          profile={props.profile}
-        />
-        <Description
-        onSubmit = {onSubmit}
-          editMode={editMode}
-          profile={props.profile}
-        />
-        <SocialNetworks
-                onSubmit = {onSubmit}
-          saveProfile={saveProfile}
-          editMode={editMode}
-          profile={props.profile}
-        />
+        <Avatar isOwner={props.isOwner} savePhoto={props.savePhoto} profile={props.profile}/>
+        <Description onSubmit = {onSubmit} editMode={editMode} profile={props.profile}/>
+        <SocialNetworks onSubmit = {onSubmit} saveProfile={saveProfile} editMode={editMode} profile={props.profile}/>
        {editMode ? <></> : <FollowersLikes /> } 
-        <span style={{ visibility: "hidden" }}></span>
-        <span style={{ visibility: "hidden" }}></span>
-        <span style={{ visibility: "hidden" }}></span>
         {props.isOwner && (
           <button
           className={styles.settingsButton}

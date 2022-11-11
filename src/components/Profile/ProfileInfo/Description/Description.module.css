@@ -4,7 +4,13 @@
     margin-left: -100px;
     background-color: #0000;
 }
+
+.DescriptionInfo {
+    line-height: 17px !important;
+}
 .ChangedDescription_container{
+    line-height: 17px;
+
     background-color: rgba(211, 211, 211, 0.43);
 }
 .Description_container ul {
