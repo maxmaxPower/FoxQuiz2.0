@@ -12,24 +12,23 @@
         line-height: 18px;
     }
 }
-@media (max-width: 620px) {
-    .SocialNetworksContainer {
-        width: 100% !important;
-    }
-}
 
 @media (max-width: 630px) {
     .SocialNetworksContainer_Changed {
         font-size: 12px;
+        width: 180px;
     }
- 
+    .ChangedDescription_container b{
+        font-size: 1px;
+    }
     .ChangeContactsContainer input {
         max-width: 120px;
     }
-    .ChangedDescription_container {
-        font-size: 12px;
+}
+@media (max-width: 620px) {
+    .SocialNetworksContainer {
+        width: 100% !important;
     }
- 
 }
 
 

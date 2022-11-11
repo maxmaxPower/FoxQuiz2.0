@@ -25,17 +25,19 @@
         font-size: 13px;
     }
     .ProfileInfo_TopContainer p {
-        font-size: 13px;
+        font-size: 11px;
     }
     .ProfileInfo_TopContainer b {
-        font-size: 13px;
+        font-size: 11px;
     }
-}
-@media (max-width: 540px) {
     .ProfileInfo_TopContainer {
-        grid-template-columns: 1fr 3fr; 
-
+        grid-template-columns: 150px 3fr ;
+        grid-template-rows: 1fr; 
     }
+    .ProfileInfo_TopContainer input{
+        font-size: 11px;
+    }
+
 }
 
 
